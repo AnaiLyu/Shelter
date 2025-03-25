@@ -1,0 +1,10 @@
+body {
+  min-width: $width-mobile-s;
+  max-width: $width-desctop;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  padding: $container-desctop;
+}
