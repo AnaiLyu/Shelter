@@ -50,8 +50,11 @@ li {
   font-weight: 400;
   font-display: swap;
 }
+body {
+  font-family: "Georgia";
+}
+
 .heading {
-  font-family: Georgia;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -59,7 +62,7 @@ li {
 
 h2 {
   font-size: 4.4rem;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 h3 {
@@ -68,14 +71,29 @@ h3 {
   color: #545454;
 }
 
-.logo__title {
-  font-family: Georgia;
-  font-size: 3.2rem;
+.btn {
+  font-size: 1.7rem;
+  line-height: 130%;
+  letter-spacing: 0.102rem;
+  color: #292929;
+}
+
+.logo {
   font-style: normal;
   font-weight: 400;
+}
+.logo__title {
+  font-size: 3.2rem;
   line-height: 110%;
   letter-spacing: 0.192rem;
-  color: #f1cdb3;
+  color: #F1CDB3;
+}
+.logo__subtitle {
+  font-family: Arial;
+  font-size: 1.3rem;
+  line-height: normal;
+  letter-spacing: 0.13rem;
+  color: #FFFFFF;
 }
 
 .paragraph,
@@ -85,6 +103,21 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20.7rem;
+  height: 5.2rem;
+  background-color: #F1CDB3;
+  border-radius: 10rem;
+}
+
+.header {
+  position: relative;
+  top: 9rem;
 }
 
 .header .container {
@@ -103,7 +136,7 @@ h3 {
 .nav__link {
   position: relative;
   padding: 0.5rem;
-  color: #cdcdcd;
+  color: #CDCDCD;
   transition-duration: 0.4s;
 }
 .nav__link::after {
@@ -112,11 +145,11 @@ h3 {
   bottom: 0;
   width: 100%;
   height: 0;
-  background-color: #f1cdb3;
+  background-color: #F1CDB3;
   content: "";
 }
 .nav__link:hover {
-  color: #fafafa;
+  color: #FAFAFA;
 }
 .nav__link:hover::after {
   height: 3px;
@@ -131,4 +164,32 @@ body {
 .container {
   margin: auto;
   padding: 0 40px 0 40px;
+}
+
+.not-only {
+  min-height: 908px;
+  background-image: url(../assets/images/start-screen-background.jpg), url(../assets/images/noise-transparent.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.not-only .container {
+  display: flex;
+  align-items: center;
+  min-height: 908px;
+  background-image: url(../assets/images/start-screen-puppy.png);
+  background-repeat: no-repeat;
+  background-size: 69.8rem 72.8rem;
+  background-position: right bottom;
+}
+.not-only__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  width: 46rem;
+}
+.not-only__heading {
+  color: #FFFFFF;
+}
+.not-only__paragraph {
+  color: #CDCDCD;
 }
