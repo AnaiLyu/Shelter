@@ -1,12 +1,19 @@
+//?  abstracts
 @import "abstracts/variables";
 
+//* base
 @import "base/base";
 @import "base/reset";
 @import "base/typography";
 
+//? components
 @import "components/buttons";
+@import "components/card";
+@import "components/slider";
 
+//* layout
 @import "layout/about";
 @import "layout/header";
 @import "layout/wrapper";
+@import "layout/our-friends";
 @import "layout/not-only";

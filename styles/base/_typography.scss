@@ -24,17 +24,15 @@
 
 body {
   font-family: "Georgia";
-}
-.heading {
-  // font-family: Georgia;
   font-style: normal;
   font-weight: 400;
+}
+.heading {
   line-height: 130%;
 }
 
 h2 {
   font-size: 4.4rem;
-  color: $color-white;
 }
 
 h3 {
@@ -49,11 +47,7 @@ h3 {
   color: $color-soft-black;
 }
 .logo {
-  font-style: normal;
-  font-weight: 400;
-
   &__title {
-    // font-family: Georgia;
     font-size: 3.2rem;
     line-height: 110%;
     letter-spacing: 0.192rem;
@@ -76,4 +70,44 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+.not-only {
+  &__heading {
+    color: $color-white;
+  }
+
+  &__paragraph {
+    color: $color-light-grey;
+  }
+}
+
+.about {
+  &__heading {
+    font-family: Georgia;
+    font-size: 3.5rem;
+    line-height: 130%;
+    letter-spacing: 0.21rem;
+  }
+
+  &__paragraph {
+    font-family: Arial;
+    font-size: 1.5rem;
+    line-height: 160%;
+  }
+}
+.our-friends {
+  &__heading {
+    text-align: center;
+  }
+
+  // &__btn {
+  // }
+}
+
+.card {
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 0.12rem;
+  }
 }
