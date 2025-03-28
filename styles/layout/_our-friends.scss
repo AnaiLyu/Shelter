@@ -1,0 +1,16 @@
+.our-friends {
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //   &__heading {
+  //   }
+  //
+  //   &__slider {
+  //   }
+  //
+  //   &__btn {
+  //   }
+}
