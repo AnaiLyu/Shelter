@@ -6,41 +6,7 @@
 
 @import "components/buttons";
 
+@import "layout/about";
 @import "layout/header";
 @import "layout/wrapper";
-
-.not-only {
-  min-height: 908px;
-  background-image: url(../assets/images/start-screen-background.jpg),
-    url(../assets/images/noise-transparent.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  & .container {
-    display: flex;
-    align-items: center;
-    min-height: 908px;
-    background-image: url(../assets/images/start-screen-puppy.png);
-    background-repeat: no-repeat;
-    background-size: 69.8rem 72.8rem;
-    background-position: right bottom;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 4.2rem;
-    width: 46rem;
-  }
-
-  &__heading {
-    color: $color-white;
-  }
-
-  &__paragraph {
-    color: $color-light-grey;
-  }
-
-  // &__btn {
-  // }
-}
+@import "layout/not-only";
