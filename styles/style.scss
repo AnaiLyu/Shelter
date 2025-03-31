@@ -9,16 +9,19 @@
 //// vendors
 
 //? layout
-@import "layout/about";
-@import "layout/header";
 @import "layout/wrapper";
-@import "layout/our-friends";
+@import "layout/header";
 @import "layout/not-only";
+@import "layout/about";
+@import "layout/our-friends";
+@import "layout/help";
+@import "layout/donation";
 
 //* components
 @import "components/buttons";
-@import "components/card";
 @import "components/slider";
+@import "components/card";
+@import "components/bank-details";
 
 //// pages
 //// themes
