@@ -2,9 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20.7rem;
+  min-width: 20.7rem;
   height: 5.2rem;
-  // padding: 1.5rem 4.5rem;
-  background-color: $color-primary;
+  padding: 1.5rem 4.5rem;
   border-radius: 10rem;
+}
+
+.btn_bordered {
+  border: 2px solid $color-primary;
+}
+
+.btn_colored {
+  background-color: $color-primary;
 }

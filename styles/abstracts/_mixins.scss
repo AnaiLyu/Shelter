@@ -1,8 +1,10 @@
 // example
-@mixin font($color, $size, $family: Georgia, $style: normal, $weight: 400) {
-  font-family: $family;
+@mixin font-displya($color, $size) {
   font-size: $size;
-  font-style: $style;
-  font-weight: $weight;
   color: $color;
+}
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

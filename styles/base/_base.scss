@@ -4,17 +4,9 @@ html {
 
 body {
   font-size: 1.6rem;
+  transition-duration: 0.3s;
 }
-
-a {
-  text-decoration: none;
+a,
+button {
   cursor: pointer;
-}
-
-ul {
-  padding-left: 0;
-}
-
-li {
-  list-style-type: none;
 }

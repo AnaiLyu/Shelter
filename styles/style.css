@@ -4,19 +4,12 @@ html {
 
 body {
   font-size: 1.6rem;
+  transition-duration: 0.3s;
 }
 
-a {
-  text-decoration: none;
+a,
+button {
   cursor: pointer;
-}
-
-ul {
-  padding-left: 0;
-}
-
-li {
-  list-style-type: none;
 }
 
 *,
@@ -26,7 +19,18 @@ li {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  transition-duration: 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 @font-face {
@@ -52,23 +56,32 @@ li {
 }
 body {
   font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .heading {
-  font-style: normal;
-  font-weight: 400;
   line-height: 130%;
 }
 
 h2 {
   font-size: 4.4rem;
-  color: #FFFFFF;
 }
 
 h3 {
   font-size: 3.5rem;
   letter-spacing: 0.21rem;
+}
+
+.about__heading,
+.our-friends__heading,
+.help__heading,
+.donation__heading {
   color: #545454;
+}
+
+.footer__heading {
+  color: #FFFFFF;
 }
 
 .btn {
@@ -78,10 +91,6 @@ h3 {
   color: #292929;
 }
 
-.logo {
-  font-style: normal;
-  font-weight: 400;
-}
 .logo__title {
   font-size: 3.2rem;
   line-height: 110%;
@@ -105,14 +114,52 @@ h3 {
   line-height: 160%;
 }
 
-.btn {
+.not-only__heading {
+  color: #FFFFFF;
+}
+.not-only__paragraph {
+  color: #CDCDCD;
+}
+
+.about__heading {
+  font-family: Georgia;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+}
+.about__paragraph {
+  font-family: Arial;
+  font-size: 1.5rem;
+  line-height: 160%;
+}
+
+.our-friends__heading {
+  text-align: center;
+}
+
+.card__title {
+  font-size: 2rem;
+  letter-spacing: 0.12rem;
+}
+
+.about {
+  background-image: url(../../assets/images/about-pets.png);
+  background-repeat: no-repeat;
+  background-size: 30rem 40.8rem;
+  background-position: left 13rem bottom 10rem;
+}
+.about__content {
+  width: 43rem;
+}
+.about .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20.7rem;
-  height: 5.2rem;
-  background-color: #F1CDB3;
-  border-radius: 10rem;
+  justify-content: flex-end;
+  margin-right: 13rem;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .header {
@@ -166,6 +213,17 @@ body {
   padding: 0 40px 0 40px;
 }
 
+.about,
+.our-friends {
+  padding: 8rem 0 10rem 0;
+}
+
+.our-friends .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .not-only {
   min-height: 908px;
   background-image: url(../assets/images/start-screen-background.jpg), url(../assets/images/noise-transparent.png);
@@ -187,9 +245,46 @@ body {
   gap: 4.2rem;
   width: 46rem;
 }
-.not-only__heading {
-  color: #FFFFFF;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20.7rem;
+  height: 5.2rem;
+  padding: 1.5rem 4.5rem;
+  border-radius: 10rem;
 }
-.not-only__paragraph {
-  color: #CDCDCD;
+
+.btn_bordered {
+  border: 2px solid #F1CDB3;
 }
+
+.btn_colored {
+  background-color: #F1CDB3;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 27rem;
+  height: 43.5rem;
+  border-radius: 0.9rem;
+  background-color: #FAFAFA;
+}
+.card__img {
+  width: 27rem;
+  height: 27rem;
+  border-radius: 0.9rem 0.9rem 0rem 0rem;
+}
+.card__btn {
+  background-color: transparent;
+  border: 2px solid #F1CDB3;
+}
+
+.slider {
+  display: flex;
+  padding: 6rem 0;
+}/*# sourceMappingURL=style.css.map */

@@ -27,6 +27,7 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+
 .heading {
   line-height: 130%;
 }
@@ -38,14 +39,26 @@ h2 {
 h3 {
   font-size: 3.5rem;
   letter-spacing: 0.21rem;
+}
+
+.about__heading,
+.our-friends__heading,
+.help__heading,
+.donation__heading {
   color: $color-dark-grey;
 }
+
+.footer__heading {
+  color: $color-white;
+}
+
 .btn {
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.102rem;
   color: $color-soft-black;
 }
+
 .logo {
   &__title {
     font-size: 3.2rem;
