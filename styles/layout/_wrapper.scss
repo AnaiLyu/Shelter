@@ -1,12 +1,12 @@
 body {
   min-width: $width-mobile-s;
-  max-width: $width-desctop;
+  max-width: $width-desktop;
   margin: auto;
 }
 
 .container {
   margin: auto;
-  padding: $container-desctop;
+  padding: $container-desktop;
 }
 
 .about,
