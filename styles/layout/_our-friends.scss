@@ -1,4 +1,6 @@
 .our-friends {
+  background-color: $color-background;
+
   & .container {
     display: flex;
     flex-direction: column;

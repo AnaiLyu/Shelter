@@ -4,18 +4,16 @@
   background-size: 30rem 40.8rem;
   background-position: left 13rem bottom 10rem;
 
-  &__content {
-    width: 43rem;
-  }
-
   & .container {
     display: flex;
     justify-content: flex-end;
     margin-right: 13rem;
   }
+
   &__content {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    width: 43rem;
   }
 }

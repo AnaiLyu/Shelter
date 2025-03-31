@@ -1,17 +1,37 @@
 .slider {
   display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
   padding: 6rem 0;
+
   &__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5.3rem;
   }
 
-  &__card {
-  }
+  // &__card {
+  //
+  // }
 
   &__btn {
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 50%;
+    border-radius: 50%;
+
     &_left {
+      order: -1;
+      background-image: url(../../assets/icons/arrow-left.svg);
     }
 
     &_right {
+      background-image: url(../../assets/icons/arrow-right.svg);
     }
   }
 }
