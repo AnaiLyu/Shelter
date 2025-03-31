@@ -1,0 +1,21 @@
+.bank-account {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+
+  // &__bank-name {
+  // }
+
+  &__card-number {
+    padding: 1rem 1.5rem 1rem 6rem;
+    background-color: $color-primary;
+    background-image: url(../../assets/icons/credit-card.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    background-position: left 1.5rem center;
+  }
+
+  // &__info {
+  // }
+}

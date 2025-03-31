@@ -1,0 +1,17 @@
+.donation {
+  background-color: $color-background;
+  background-image: url(../../assets/images/donation-dog.png);
+  background-position: left 14rem bottom 1rem;
+  background-repeat: no-repeat;
+
+  & .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__content {
+    width: 38rem;
+  }
+  //
+  //   &__heading {
+  //   }
+}
