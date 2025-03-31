@@ -81,7 +81,7 @@ h3 {
 }
 
 .footer__heading {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn {
@@ -95,14 +95,14 @@ h3 {
   font-size: 3.2rem;
   line-height: 110%;
   letter-spacing: 0.192rem;
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
 .logo__subtitle {
   font-family: Arial;
   font-size: 1.3rem;
   line-height: normal;
   letter-spacing: 0.13rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .paragraph,
@@ -115,10 +115,10 @@ h3 {
 }
 
 .not-only__heading {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .not-only__paragraph {
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
 
 .about__heading {
@@ -140,26 +140,25 @@ h3 {
 .card__title {
   font-size: 2rem;
   letter-spacing: 0.12rem;
+  color: #545454;
 }
 
-.about {
-  background-image: url(../../assets/images/about-pets.png);
-  background-repeat: no-repeat;
-  background-size: 30rem 40.8rem;
-  background-position: left 13rem bottom 10rem;
+body {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: auto;
 }
-.about__content {
-  width: 43rem;
+
+.container {
+  margin: auto;
+  padding: 0 40px 0 40px;
 }
-.about .container {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 13rem;
-}
-.about__content {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+
+.about,
+.our-friends,
+.help,
+.donation {
+  padding: 8rem 0 10rem 0;
 }
 
 .header {
@@ -183,7 +182,7 @@ h3 {
 .nav__link {
   position: relative;
   padding: 0.5rem;
-  color: #CDCDCD;
+  color: #cdcdcd;
   transition-duration: 0.4s;
 }
 .nav__link::after {
@@ -192,36 +191,14 @@ h3 {
   bottom: 0;
   width: 100%;
   height: 0;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   content: "";
 }
 .nav__link:hover {
-  color: #FAFAFA;
+  color: #fafafa;
 }
 .nav__link:hover::after {
   height: 3px;
-}
-
-body {
-  min-width: 320px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.container {
-  margin: auto;
-  padding: 0 40px 0 40px;
-}
-
-.about,
-.our-friends {
-  padding: 8rem 0 10rem 0;
-}
-
-.our-friends .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .not-only {
@@ -246,6 +223,101 @@ body {
   width: 46rem;
 }
 
+.about {
+  background-image: url(../../assets/images/about-pets.png);
+  background-repeat: no-repeat;
+  background-size: 30rem 40.8rem;
+  background-position: left 13rem bottom 10rem;
+}
+.about .container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 13rem;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 43rem;
+}
+
+.our-friends {
+  background-color: #f6f6f6;
+}
+.our-friends .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.help__heading {
+  text-align: center;
+}
+.help__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 7rem;
+  padding: 6rem 4rem 0 4rem;
+}
+.help__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 6rem;
+  max-width: 17.5rem;
+  height: 9rem;
+  background-size: 6rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.help__item_food {
+  background-image: url(../../assets/icons/help_list/icon-pet-food.svg);
+}
+.help__item_transport {
+  background-image: url(../../assets/icons/help_list/icon-transportation.svg);
+}
+.help__item_toys {
+  background-image: url(../../assets/icons/help_list/icon-toys.svg);
+}
+.help__item_bowls {
+  background-image: url(../../assets/icons/help_list/icon-bowls-and-cups.svg);
+}
+.help__item_shampoos {
+  background-image: url(../../assets/icons/help_list/icon-shampoos.svg);
+}
+.help__item_vitamins {
+  background-image: url(../../assets/icons/help_list/icon-vitamins.svg);
+}
+.help__item_midicines {
+  background-image: url(../../assets/icons/help_list/icon-medicines.svg);
+}
+.help__item_collars {
+  background-image: url(../../assets/icons/help_list/collars-icon-collars-leashes.svg);
+}
+.help__item_sleep-area {
+  background-image: url(../../assets/icons/help_list/icon-sleeping-area.svg);
+}
+
+.donation {
+  background-color: #f6f6f6;
+  background-image: url(../../assets/images/donation-dog.png);
+  background-position: left 14rem bottom 1rem;
+  background-repeat: no-repeat;
+}
+.donation .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.donation__content {
+  width: 38rem;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -257,11 +329,41 @@ body {
 }
 
 .btn_bordered {
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
 }
 
 .btn_colored {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
+}
+
+.slider {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  padding: 6rem 0;
+}
+.slider__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5.3rem;
+}
+.slider__btn {
+  width: 4rem;
+  height: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 50%;
+  border-radius: 50%;
+}
+.slider__btn_left {
+  order: -1;
+  background-image: url(../../assets/icons/arrow-left.svg);
+}
+.slider__btn_right {
+  background-image: url(../../assets/icons/arrow-right.svg);
 }
 
 .card {
@@ -272,7 +374,7 @@ body {
   width: 27rem;
   height: 43.5rem;
   border-radius: 0.9rem;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 .card__img {
   width: 27rem;
@@ -281,10 +383,20 @@ body {
 }
 .card__btn {
   background-color: transparent;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
 }
 
-.slider {
+.bank-account {
   display: flex;
-  padding: 6rem 0;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.bank-account__card-number {
+  padding: 1rem 1.5rem 1rem 6rem;
+  background-color: #f1cdb3;
+  background-image: url(../../assets/icons/credit-card.svg);
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  background-position: left 1.5rem center;
 }/*# sourceMappingURL=style.css.map */
