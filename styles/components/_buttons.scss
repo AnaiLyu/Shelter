@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 20.7rem;
   height: 5.2rem;
   padding: 1.5rem 4.5rem;
   border-radius: 10rem;
+  &:hover {
+    color: $color-primary-light;
+  }
 }
 
 .btn_bordered {
