@@ -1,0 +1,52 @@
+.footer {
+  background-image: url(../../assets/images/footer-background.png);
+
+  & .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 16rem;
+    padding: 5.5rem 4rem;
+    background-image: url(../../assets/images/footer-puppy.png);
+    background-repeat: no-repeat;
+    background-position: right 4rem bottom;
+    background-size: 30rem;
+  }
+
+  &__contacts {
+    padding-left: 6rem;
+  }
+
+  & .contacts,
+  .location {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 31rem;
+  }
+}
+
+.contacts {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  &__email {
+    background-image: url(../../assets/icons/ico_contacts/icon-email.svg);
+    background-repeat: no-repeat;
+    background-size: 4rem 3rem;
+  }
+
+  &__phone {
+    background-image: url(../../assets/icons/ico_contacts/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-size: 4rem 3rem;
+  }
+}
+
+.location {
+  &__icon {
+    background-image: url(../../assets/icons/ico_contacts/icon-marker.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+  }
+}
