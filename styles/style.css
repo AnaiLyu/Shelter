@@ -143,6 +143,33 @@ h3 {
   color: #545454;
 }
 
+.bank-account__bank-name {
+  font-size: 1.5rem;
+  line-height: 110%;
+  letter-spacing: 0.09rem;
+  color: #545454;
+}
+.bank-account__card-number {
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  color: #545454;
+}
+.bank-account__info {
+  font-family: Arial;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.8rem;
+  color: #b2b2b2;
+}
+
+.footer__contacts {
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  color: #f1cdb3;
+}
+
 body {
   min-width: 320px;
   max-width: 1200px;
@@ -197,8 +224,9 @@ body {
 .nav__link:hover {
   color: #fafafa;
 }
-.nav__link:hover::after {
+.nav__link:active::after {
   height: 3px;
+  color: #fafafa;
 }
 
 .not-only {
@@ -221,6 +249,9 @@ body {
   flex-direction: column;
   gap: 4.2rem;
   width: 46rem;
+}
+.not-only__btn.btn {
+  width: 20.7rem;
 }
 
 .about {
@@ -249,6 +280,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.our-friends__btn {
+  min-width: 26.1rem;
+}
 
 .help .container {
   display: flex;
@@ -262,7 +296,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  gap: 7rem;
+  gap: 12rem;
   padding: 6rem 4rem 0 4rem;
 }
 .help__item {
@@ -318,14 +352,63 @@ body {
   width: 38rem;
 }
 
+.footer {
+  background-image: url(../../assets/images/footer-background.png);
+}
+.footer .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 16rem;
+  padding: 5.5rem 4rem;
+  background-image: url(../../assets/images/footer-puppy.png);
+  background-repeat: no-repeat;
+  background-position: right 4rem bottom;
+  background-size: 30rem;
+}
+.footer__contacts {
+  padding-left: 6rem;
+}
+.footer .contacts,
+.footer .location {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 31rem;
+}
+
+.contacts {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.contacts__email {
+  background-image: url(../../assets/icons/ico_contacts/icon-email.svg);
+  background-repeat: no-repeat;
+  background-size: 4rem 3rem;
+}
+.contacts__phone {
+  background-image: url(../../assets/icons/ico_contacts/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 4rem 3rem;
+}
+
+.location__icon {
+  background-image: url(../../assets/icons/ico_contacts/icon-marker.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+}
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 20.7rem;
   height: 5.2rem;
   padding: 1.5rem 4.5rem;
   border-radius: 10rem;
+}
+.btn:hover {
+  color: #fddcc4;
 }
 
 .btn_bordered {
@@ -376,12 +459,16 @@ body {
   border-radius: 0.9rem;
   background-color: #fafafa;
 }
+.card:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
 .card__img {
   width: 27rem;
   height: 27rem;
   border-radius: 0.9rem 0.9rem 0rem 0rem;
 }
 .card__btn {
+  min-width: 18.7rem;
   background-color: transparent;
   border: 2px solid #f1cdb3;
 }
@@ -393,10 +480,12 @@ body {
   padding-top: 2rem;
 }
 .bank-account__card-number {
+  width: 35rem;
   padding: 1rem 1.5rem 1rem 6rem;
   background-color: #f1cdb3;
   background-image: url(../../assets/icons/credit-card.svg);
   background-repeat: no-repeat;
   background-size: 2.5rem;
   background-position: left 1.5rem center;
+  border-radius: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

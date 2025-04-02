@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
   <title>Cozy House</title>
 </head>
 
@@ -22,7 +23,7 @@
           <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
         </ul>
       </nav>
-      <div class="burger-menu"></div>
+      <div class="burger-menu" style="display: none;"></div>
     </div>
   </header>
 
@@ -31,9 +32,11 @@
     <section class="not-only">
       <div class="container">
         <div class="not-only__content">
-          <h2 class="not-only__heading heading">Not only people need a house</h2>
-          <p class="not-only__paragraph paragraph"></p>
-          <a href="#" class="not-only__btn btn">Make a friend</a>
+          <h2 class="not-only__heading heading">Not only people <br>need a house</h2>
+          <p class="not-only__paragraph paragraph">We offer to give a chance to a little and nice puppy with an
+            extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
+          </p>
+          <a href="#" class="not-only__btn btn btn_colored">Make a friend</a>
         </div>
       </div>
     </section>
@@ -56,37 +59,47 @@
 
     <section class="our-friends">
       <div class="container">
-        <h3 class="our-friends__heading heading">Our friends who
-          are looking for a house</h3>
-        <div class="our-friends__slider">
+        <h3 class="our-friends__heading heading">Our friends who <br>are looking for a house</h3>
+        <div class="our-friends__slider slider">
           <div class="slider__cards">
             <div class="slider__card card">
-              <img src="#" alt="pet" class="card__img">
-              <span class="card__title"></span>
-              <button class="card__btn btn">Learn more</button>
+              <img src="#" alt="pet image" class="card__img">
+              <span class="card__title">Pet Name</span>
+              <button class="card__btn btn btn_bordered">Learn more</button>
             </div>
+            <!-- todo Delete from \/ -->
+            <!-- <div class="slider__card card">
+              <img src="#" alt="pet image" class="card__img">
+              <span class="card__title">Pet Name</span>
+              <button class="card__btn btn btn_bordered">Learn more</button>
+            </div>
+            <div class="slider__card card">
+              <img src="#" alt="pet image" class="card__img">
+              <span class="card__title">Pet Name</span>
+              <button class="card__btn btn btn_bordered">Learn more</button>
+            </div> -->
+            <!-- todo Delete to /\ -->
           </div>
-          <button class="slider__btn slider__btn_left"></button>
-          <button class="slider__btn slider__btn_right"></button>
+          <button class="slider__btn slider__btn_left btn_bordered"></button>
+          <button class="slider__btn slider__btn_right btn_bordered"></button>
         </div>
-        <a href="#" class="our-friends__btn btn">Get to know the rest</a>
+        <a href="#" class="our-friends__btn btn btn_colored">Get to know the rest</a>
       </div>
     </section>
 
     <section class="help">
       <div class="container">
-        <h3 class="help__heading heading">How you can help
-          our shelter</h3>
+        <h3 class="help__heading heading">How you can help <br>our shelter</h3>
         <ul class="help__content">
-          <li class="help__item">Pet food</li>
-          <li class="help__item">Transportation</li>
-          <li class="help__item">Toys</li>
-          <li class="help__item">Bowls and cups</li>
-          <li class="help__item">Shampoos</li>
-          <li class="help__item">Vitamins</li>
-          <li class="help__item">Medicines</li>
-          <li class="help__item">Collars / leashes</li>
-          <li class="help__item">Sleeping areas</li>
+          <li class="help__item help__item_food">Pet food</li>
+          <li class="help__item help__item_transport">Transportation</li>
+          <li class="help__item help__item_toys">Toys</li>
+          <li class="help__item help__item_bowls">Bowls and cups</li>
+          <li class="help__item help__item_shampoos">Shampoos</li>
+          <li class="help__item help__item_vitamins">Vitamins</li>
+          <li class="help__item help__item_midicines">Medicines</li>
+          <li class="help__item help__item_collars">Collars / leashes</li>
+          <li class="help__item help__item_sleep-area">Sleeping areas</li>
         </ul>
       </div>
     </section>
@@ -94,7 +107,7 @@
     <section class="donation">
       <div class="container">
         <div class="donation__content">
-          <h3 class="donation__heading heading">You can also make a donation</h3>
+          <h3 class="donation__heading heading">You can also <br>make a donation</h3>
           <div class="bank-account">
             <p class="bank-account__bank-name">Name of the bank / Type of bank account</p>
             <span class="bank-account__card-number">8380 2880 8028 8791 7435</span>
@@ -112,8 +125,8 @@
     <div class="container">
       <div class="contacts">
         <h3 class="footer__heading heading">For questions and suggestions</h3>
-        <a href="mailto:email@shelter.com" class="contact__email footer__contacts">email@shelter.com</a>
-        <a href="tel:+136745677554" class="contact__phone footer__contacts">+13 674 567 75 54</a>
+        <a href="mailto:email@shelter.com" class="contacts__email footer__contacts">email@shelter.com</a>
+        <a href="tel:+136745677554" class="contacts__phone footer__contacts">+13 674 567 75 54</a>
       </div>
       <div class="location">
         <h3 class="footer__heading heading">We are waiting for your visit</h3>
